@@ -8,6 +8,8 @@ namespace Ffyrn.MonoEngine.Example
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        
+        private Renderer _renderer;
 
         public Game1()
         {
@@ -26,6 +28,7 @@ namespace Ffyrn.MonoEngine.Example
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            _renderer = new Renderer(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
         }
@@ -45,7 +48,9 @@ namespace Ffyrn.MonoEngine.Example
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-
+            
+            _renderer.DrawRectangle(Color.Red, 0, 0, 100, 200); // Draw a rectangle using the MonoEngine renderer
+            
             base.Draw(gameTime);
         }
     }
