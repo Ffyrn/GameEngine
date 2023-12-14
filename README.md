@@ -1,7 +1,8 @@
-# ffyrn.gameengine
-We are making a wrapper which will literally wrap around mono-game making it easy and simple to use.
-This wrapper will provide:
+# Ffyrn.MonoEngine
+We are making a wrapper which will literally wrap around MonoGame making it easy and simple to use.  
 
-A higher performance accuracy
-better model features 
-and a good working experience 
+This wrapper aims to provide:
+
+- Efficient resource management: ensuring a good performing game without delving into low-level code
+- Ready-to-use features, including physics, collision, and more
+- A easy-to-use development experience
